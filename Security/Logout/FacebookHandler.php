@@ -25,7 +25,7 @@ class FacebookHandler implements LogoutHandlerInterface
 {
     private $facebook;
 
-    public function __construct(\BaseFacebook $facebook)
+    public function __construct($facebook)
     {
         $this->facebook = $facebook;
     }
