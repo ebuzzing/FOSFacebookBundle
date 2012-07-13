@@ -22,7 +22,7 @@ class FacebookHelper extends Helper
     protected $scope;
     protected $facebook;
 
-    public function __construct(EngineInterface $templating, \BaseFacebook $facebook, $logging = true, $culture = 'en_US', array $scope = array())
+    public function __construct(EngineInterface $templating, $facebook, $logging = true, $culture = 'en_US', array $scope = array())
     {
         $this->templating  = $templating;
         $this->logging     = $logging;
