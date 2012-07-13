@@ -6,7 +6,7 @@
 
     <services>
 
-        <service id="fos_facebook.api" class="%fos_facebook.api.class%">
+        <service id="fos_facebook.api" class="%fos_facebook.api.class%" factory-class="FOS\FacebookBundle\DependencyInjection\ServiceFactory" factory-method="getInstance">
             <file>%fos_facebook.file%</file>
             <argument type="collection">
                 <argument key="appId">%fos_facebook.app_id%</argument>
