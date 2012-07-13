@@ -35,7 +35,7 @@ class FacebookProvider implements AuthenticationProviderInterface
     protected $userChecker;
     protected $createIfNotExists;
 
-    public function __construct($providerKey, \BaseFacebook $facebook, UserProviderInterface $userProvider = null, UserCheckerInterface $userChecker = null, $createIfNotExists = false)
+    public function __construct($providerKey, $facebook, UserProviderInterface $userProvider = null, UserCheckerInterface $userChecker = null, $createIfNotExists = false)
     {
         if (null !== $userProvider && null === $userChecker) {
             throw new \InvalidArgumentException('$userChecker cannot be null, if $userProvider is not null.');
